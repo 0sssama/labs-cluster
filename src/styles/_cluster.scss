@@ -57,6 +57,7 @@
 		grid-template-rows: repeat(14, var(--postHeight));
 	}
 	@include desktop {
+		overflow: visible;
 		justify-content: center;
 	}
 }
