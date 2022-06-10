@@ -1,0 +1,35 @@
+/*
+	-> DEV NOTE:
+	This  file has  all the  SCSS  mixins used for
+	breakpoints to make  responsive designs easier.
+	If you're not   familiar with SCSS, mixins are
+	somewhat  similar  to  functions. We  use  the
+	mixins  below  to  make specific  css code run
+	at specific screen sizes.
+	-> GUIDE
+	Mobile		: from 0 to 600px
+	notDesktop	: from 0 to 1024px (try your best not to use this one)
+	Tablet 		: from 600px onwards
+	desktop		: from 1024px onwards
+	hugeScreens	: from 1440px onwards
+*/
+
+@mixin mobile {
+	@media (max-width: 37.5em) { @content; } // 600px
+}
+
+@mixin tablet {
+	@media (min-width: 37.5em) { @content; } // 600px
+}
+
+@mixin notDesktop {
+	@media (max-width: 64em) { @content; } // 1024px
+}
+
+@mixin desktop {
+	@media (min-width: 64.01em) { @content; }	// 1024px
+}
+
+@mixin hugeScreens {
+	@media (min-width: 90.01em) { @content; }	// 1920px
+}

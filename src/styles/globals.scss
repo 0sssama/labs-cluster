@@ -1,0 +1,69 @@
+@import "fonts";
+@import "breakpoints";
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	transition: all 400ms cubic-bezier(.59,0,.06,1);
+	font-family: 'Plus Jakarta Sans', 'Almarai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+	position: relative;
+	overflow-x: hidden;
+	background-color: #fff;
+	color: #212121;
+}
+
+body, #__next, .wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.hide-for-mobile {
+	// Although this is  called hide-for-mobile
+	// It hides stuff in both mobile and tablet
+	// views.
+	@include notDesktop {
+		display: none!important;
+	}
+}
+
+.hide-for-desktop {
+	@include desktop {
+		display: none!important;
+	}
+}
+
+img {
+	pointer-events: none
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p.rights {
+	font-size: 0.785rem;
+	font-weight: 500;
+	a {
+		color: #0ea5e9;
+		&:hover {
+			color: #0369a1;
+			text-decoration: underline
+		}
+	}
+}
+
+@import "nprogress";
+@import "cluster";
