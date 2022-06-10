@@ -86,3 +86,9 @@ Here is a list of all the contributors to this project. Thanks to all of you!
 - [Abdelhadi SABANI (awbx)](https://github.com/awbx)
 - [Nabil ATTIA](https://github.com/attia-nabil)
 - [Rida EL-MAZARY](https://github.com/rida-el)
+
+## Technologies used
+
+- Next.js for frontend + backend
+- TailwindCSS for styles
+- Recoil.js for global states
