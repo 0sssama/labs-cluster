@@ -29,7 +29,7 @@ function EtageDeux({ activePosts }) {
 
 export async function getServerSideProps() {
   // get all active posts
-  const postsRequest = await fetch("http://localhost:3000/api/e2");
+  const postsRequest = await fetch(process.env.NEXT_PUBLIC_URL + "/api/e2");
 
   const activePosts = await postsRequest.json();
 
