@@ -45,7 +45,8 @@
 	display: grid;
 	grid-gap: 4px;
 	width: 100%;
-	justify-content: center;
+	justify-content: flex-start;
+	overflow: auto;
 	&.e1 {
 		grid-template-columns: repeat(20, var(--postWidth));
 		grid-template-rows: repeat(12, var(--postHeight));
@@ -55,8 +56,7 @@
 		grid-template-columns: repeat(31, var(--postWidth));
 		grid-template-rows: repeat(14, var(--postHeight));
 	}
-	@include mobile {
-		justify-content: flex-start;
-		overflow: scroll;
+	@include desktop {
+		justify-content: center;
 	}
 }
