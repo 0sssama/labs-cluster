@@ -1,34 +1,88 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 1337KH Labs Clusters Map
 
-## Getting Started
+Hellow. This tool is made by 1337 Khouribga students for 1337 Khouribga students to help make their lives at the school easier.
 
-First, run the development server:
+This tool will allow students to find available posts, posts that are not currently working, find students by login or name, and other features to come.
 
-```bash
-npm run dev
-# or
-yarn dev
+At [the bottom](#contributors) of this README, you will find a list of the contributors for this project. Wanna become one? here's how you can do that!
+
+
+## How to contribute
+
+### Creating your Intra app
+
+First, head out to your Intranet dashboard's settings :
+
+![enter image description here](https://i.ibb.co/tbBtYYM/Group-1.png)
+
+Then go to API.
+
+![enter image description here](https://i.ibb.co/48KxFxJ/Group-2.png)
+
+Then press on "Register a new app".
+
+![enter image description here](https://i.ibb.co/MVKwyvr/Group-2-1.png)
+
+Fill the form with a name for your app, and a Redirect URI (it can be any random URL doesn't matter), and for the scopes just leave them as they are.
+
+After your app is created, you will find your client UID and secret keys.
+
+![Group-3](https://i.ibb.co/wCrrjck/Group-3.png)
+
+
+### Creating a .env file
+
+Now follow these steps :
+
+ - Fork the repo
+ - Clone it on your local machine
+ - 'cd' into it, then create a '.env' file in the root of the project. Here is an example of how your .env file should look :
+  ```
+  # your intra app secret keys
+CLIENT_UID=<YOUR CLIENT UID>
+CLIENT_SECRET=<YOUR CLIENT SECRET>
+
+# just copy this at it is. this is the url to which the app will make requests
+NEXT_PUBLIC_URL=http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Dig in!
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+In order to dig in, you should first create a branch in which you will code the feature you want to add, you can do that using the following command :
+```bash
+git checkout -b <your branch name>
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+We recommend to call it something in this format `feature/my-feature`. ex: `feature/dark-mode` or `feature/api-optimization`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+Now you need to install the app dependencies, you can do that using this command :
+```bash
+npm install
+```
+or if you're a yarn lover (like Ismail ;))
+```bash
+yarn install
+```
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+Finally, you can run the app using this command
+```bash
+npm run dev
+```
+or
+```bash
+yarn dev
+```
+Now you can view the app by visiting `http://localhost:3000/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+After you finished coding and testing your feature, push to your branch. Then create a pull request to the `dev` branch in this repo. Have fun, and thanks a lot!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Contributors
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Here is a list of all the contributors to this project. Thanks to all of you!
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Oussama LABRAMI](https://github.com/0sssama)
+- [Abdelhadi SABANI (awbx)](https://github.com/awbx)
+- [Nabil ATTIA](https://github.com/attia-nabil)
+- [Rida EL-MAZARY](https://github.com/rida-el)
