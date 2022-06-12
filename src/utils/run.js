@@ -10,7 +10,7 @@ const config = {
   },
 };
 
-async function run() {
+export async function run() {
   const client = new ClientCredentials(config);
 
   try {
@@ -25,4 +25,6 @@ async function run() {
   }
 }
 
-export default run;
+export function now() {
+	return Date.now() / 1000;
+}
