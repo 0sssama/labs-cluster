@@ -46,7 +46,6 @@ export default async function handler(req, res) {
   	  posts[item.host] = {
   	  	login: item.user.login,
   	  	displayname: item.user.usual_full_name,
-  	  	image_url: item.user.image_url,
   	  }
   	}
   });

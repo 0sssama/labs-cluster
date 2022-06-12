@@ -71,7 +71,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
       ) : host === "X" ? (
         <h1 className="font-bold">X</h1>
       ) : user ? (
-        <img src={user.image_url} alt={user.login} />
+        <img src={`https://cdn.intra.42.fr/users/small_${user.login}.jpg`} alt={user.login} />
       ) : (
         <></>
       )}
