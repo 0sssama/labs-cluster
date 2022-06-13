@@ -2,7 +2,7 @@ function Wrapper({ children }) {
   return (
     <div className="w-full h-full py-3 px-6 md:py-6 md:px-12">
       {children}
-      <p className="rights">
+      <p className="rights dark:text-gray-200">
         Contributors :
         <a href="https://github.com/0sssama" target="_blank" rel="noreferrer">
           Oussama Labrahmi
