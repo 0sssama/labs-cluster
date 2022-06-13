@@ -23,6 +23,14 @@ function Wrapper({ children }) {
         <a href="https://github.com/rida-el" target="_blank" rel="noreferrer">
           Rida El-Mazary
         </a>
+        ,{" "}
+        <a href="https://github.com/abellaismail7" target="_blank" rel="noreferrer">
+          Ismail Ait Bella
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/chaibourajli" target="_blank" rel="noreferrer">
+          Chaimaa Bourajli
+        </a>{" "}
         .
       </p>
     </div>
