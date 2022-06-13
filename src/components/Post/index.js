@@ -69,7 +69,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
           الباب
         </h1>
       ) : host === "X" ? (
-        <h1 className="font-bold">X</h1>
+        <h1 className="font-bold dark:text-sky-500">X</h1>
       ) : user ? (
         <img src={`https://cdn.intra.42.fr/users/small_${user.login}.jpg`} alt={user.login} />
       ) : (

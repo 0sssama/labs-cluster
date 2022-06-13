@@ -23,7 +23,7 @@ function Navigation() {
                 className={`Navigation-wrapper-item flex items-center justify-center h-[40px] w-[100px] cursor-pointer text-sm font-bold ${
                   router.pathname === `/${link}`
                     ? "bg-sky-500 text-white hover:bg-sky-700 dark:text-sky-200 dark:bg-sky-700"
-                    : "bg-white text-sky-700"
+                    : "bg-white text-sky-700 hover:bg-gray-200"
                 }`}
                 key={i}
                 onClick={() => router.push(`/${link}`)}
