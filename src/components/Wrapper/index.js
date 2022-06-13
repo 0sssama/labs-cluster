@@ -18,8 +18,12 @@ function Wrapper({ children }) {
           rel="noreferrer"
         >
           Nabil Attia
+<<<<<<< HEAD
         </a>
         ,{" "}
+=======
+        </a>,{" "}
+>>>>>>> 0f3d59abd9b758b68126c05dea0f3cc45725d129
         <a href="https://github.com/rida-el" target="_blank" rel="noreferrer">
           Rida El-Mazary
         </a>
