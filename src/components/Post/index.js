@@ -27,7 +27,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
     <div
       className={`poste group relative flex items-center justify-center ${
         host === "ENTRANCE"
-          ? "entrance bg-sky-500 !border-transparent text-white shadow-sky-200 shadow-xl cursor-pointer hover:bg-sky-400 dark:bg-gray-600 dark:text-sky-300 dark:shadow-gray-700	"
+          ? "entrance bg-sky-500 !border-transparent text-white shadow-sky-200 shadow-xl cursor-pointer hover:bg-sky-400 dark:bg-gray-600 dark:text-sky-300 dark:shadow-gray-700"
           : user
           ? "taken"
           : ""
