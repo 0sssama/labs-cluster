@@ -18,8 +18,7 @@ function Wrapper({ children }) {
           rel="noreferrer"
         >
           Nabil Attia
-        </a>{" "}
-        and{" "}
+        </a>,{" "}
         <a href="https://github.com/rida-el" target="_blank" rel="noreferrer">
           Rida El-Mazary
         </a>
