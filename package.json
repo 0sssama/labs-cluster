@@ -15,7 +15,7 @@
     "react-icons": "^4.4.0",
     "recoil": "^0.7.3",
     "sass": "^1.52.2",
-    "simple-oauth2": "^4.3.0",
+    "simple-oauth2": "^4.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.7",
