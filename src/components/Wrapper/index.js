@@ -2,7 +2,7 @@ function Wrapper({ children }) {
   return (
     <div className="w-full h-full py-3 px-6 md:py-6 md:px-12">
       {children}
-      <p className="rights">
+      <p className="rights dark:text-gray-200">
         Contributors :
         <a href="https://github.com/0sssama" target="_blank" rel="noreferrer">
           Oussama Labrahmi
@@ -18,12 +18,18 @@ function Wrapper({ children }) {
           rel="noreferrer"
         >
           Nabil Attia
-        </a>{" "}
-        and{" "}
+        </a>,{" "}
         <a href="https://github.com/rida-el" target="_blank" rel="noreferrer">
           Rida El-Mazary
         </a>
-        .
+        ,{" "}
+        <a href="https://github.com/abellaismail7" target="_blank" rel="noreferrer">
+          Ismail Ait Bella
+        </a>{" "}
+        and{" "}
+        <a href="https://github.com/chaibourajli" target="_blank" rel="noreferrer">
+          Chaimaa Bourajli
+        </a>.
       </p>
     </div>
   );

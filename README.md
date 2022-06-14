@@ -87,6 +87,8 @@ Here is a list of all the contributors to this project. Thanks to all of you!
 - [Nabil ATTIA](https://github.com/attia-nabil)
 - [Rida EL-MAZARY](https://github.com/rida-el)
 - [Ismail Ait Bella](https://github.com/abellaismail7)
+- [Chaimaa Bourajli](https://github.com/chaibourajli)
+- [Xopper](https://github.com/Xopper)
 
 ## Technologies used
 
