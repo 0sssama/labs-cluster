@@ -51,7 +51,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
       }}
     >
       {host !== "ENTRANCE" && (
-        <p className="absolute bottom-[105%] origin-bottom-left left-0 text-xs z-[1337] scale-0 opacity-0 rounded-md group-hover:scale-100 group-hover:opacity-100 bg-sky-600 p-2 text-white dark:text-sky-400 dark:bg-gray-600">
+        <p className="absolute bottom-[105%] origin-bottom-left left-0 text-xs z-[1337] scale-0 opacity-0 rounded-md group-hover:scale-100 group-hover:opacity-100 bg-sky-600 p-2 text-white dark:text-sky-400 dark:bg-gray-700">
           {user && (
             <span className="whitespace-nowrap font-bold">
               {user.displayname}
