@@ -13,6 +13,14 @@ global.ft_posts = {
   },
 }
 
+function reset_posts(posts) {
+	for (const key in posts)
+	{
+		posts[key] = null;
+	}
+	return posts;
+}
+
 
 async function getPosts(posts) {
   // get 42 access token
@@ -51,6 +59,7 @@ async function getPostsFromCache(etage)
   if (posts.last_fetch + 60 < now())
   {
 	console.log( "from api");
+	posts.posts = reset_posts(posts.posts);
   	posts.posts = await getPosts(posts.posts);
   	posts.last_fetch = now();
   }
@@ -76,13 +85,10 @@ export default async function handler(req, res) {
   try{
     const payload = await getPostsFromCache(etage);
     payload.forEach(item => {
-      if (posts[item.host] == null)
-      {
         posts[item.host] = {
           login: item.user.login,
           displayname: item.user.usual_full_name,
         }
-      }
     });
 	return res.status(200).json(posts);
   }catch(error)
