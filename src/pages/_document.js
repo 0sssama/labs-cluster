@@ -15,7 +15,7 @@ export default function Document() {
         <meta property="og:type" content="article" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className="relative">
+      <body className="relative dark:bg-gray-800">
         <Main />
         <NextScript />
       </body>

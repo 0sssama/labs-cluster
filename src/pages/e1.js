@@ -9,7 +9,7 @@ function EtageUn({ activePosts }) {
         <title>Labs E1 - Map of 1337 Labs Clusters</title>
       </Head>
       <Navigation />
-      <h1 className="title text-sky-500">E1 - Labs</h1>
+      <h1 className="title text-sky-500 dark:text-sky-600">E1 - Labs</h1>
       <div className="cluster e1">
         {posts.map((post, i) => (
           <Post

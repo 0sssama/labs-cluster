@@ -27,7 +27,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
     <div
       className={`poste group relative flex items-center justify-center ${
         host === "ENTRANCE"
-          ? "entrance bg-sky-500 !border-transparent text-white shadow-sky-200	shadow-xl cursor-pointer hover:bg-sky-400"
+          ? "entrance bg-sky-500 !border-transparent text-white shadow-sky-200 shadow-xl cursor-pointer hover:bg-sky-400 dark:bg-gray-600 dark:text-sky-300 dark:shadow-gray-700"
           : user
           ? "taken"
           : ""
@@ -51,14 +51,14 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
       }}
     >
       {host !== "ENTRANCE" && (
-        <p className="absolute bottom-[105%] origin-bottom-left left-0 text-xs z-[1337] scale-0 opacity-0 rounded-md group-hover:scale-100 group-hover:opacity-100 bg-sky-500 p-2 text-white">
+        <p className="absolute bottom-[105%] origin-bottom-left left-0 text-xs z-[1337] scale-0 opacity-0 rounded-md group-hover:scale-100 group-hover:opacity-100 bg-sky-600 p-2 text-white dark:text-sky-400 dark:bg-gray-600">
           {user && (
             <span className="whitespace-nowrap font-bold">
               {user.displayname}
             </span>
           )}
           {user && <br />}
-          <span className="whitespace-nowrap">
+          <span className="whitespace-nowrap dark:text-gray-200">
             {host === "X" ? "Post not working" : host}
           </span>
         </p>
@@ -69,7 +69,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
           الباب
         </h1>
       ) : host === "X" ? (
-        <h1 className="font-bold">X</h1>
+        <h1 className="font-bold dark:text-sky-500">X</h1>
       ) : user ? (
         <img src={`https://cdn.intra.42.fr/users/small_${user.login}.jpg`} alt={user.login} />
       ) : (
