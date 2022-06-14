@@ -68,7 +68,7 @@ function Navigation() {
         <input
           type="text"
           placeholder="Search for posts, users, logins..."
-          className="w-full md:w-[300px] bg-gray-100 dark:bg-gray-800 appearance-none border-2 border-gray-200 dark:border-gray-600 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-500"
+          className="w-full md:w-[300px] bg-gray-100 dark:bg-gray-800 appearance-none border-2 border-gray-200 dark:border-gray-700 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-sky-500 dark:focus:border-sky-400 dark:text-gray-200"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
