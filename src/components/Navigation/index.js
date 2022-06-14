@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { darkLogoState, searchState } from "atoms/states";
 import { useRecoilState } from "recoil";
+import Cookies from "js-cookie";
 
 function Navigation() {
   // next.js router
@@ -50,6 +51,11 @@ function Navigation() {
             class="sr-only peer"
             checked={!darkLogo}
             onChange={() => {
+              if (darkLogo) {
+                Cookies.set("darkMode", "true");
+              } else {
+                Cookies.set("darkMode", "false");
+              }
               document.querySelector("html").classList.toggle("dark");
               setDarkLogo(!darkLogo);
             }}
