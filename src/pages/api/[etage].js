@@ -44,18 +44,19 @@ async function getPosts(posts) {
   return _posts;
 }
 
-async function getPostsFromCache(etage) {
+async function getPostsFromCache(etage)
+{
   const posts = global.ft_posts[etage];
+  console.log(posts.last_fetch, now());
   if (posts.last_fetch + 60 < now())
   {
+	console.log( "from api");
   	posts.posts = await getPosts(posts.posts);
   	posts.last_fetch = now();
-  	return posts.posts;
   }
   else
-  {
-  	return posts.posts; 
-  }
+	console.log("from cache");
+  return posts.posts; 
 }
 
 
