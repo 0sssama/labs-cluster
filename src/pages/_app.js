@@ -15,18 +15,22 @@ Router.events.on("routeChangeComplete", () => NProgress.done());
 Router.events.on("routeChangeError", () => NProgress.done());
 
 function DarkModeHandler() {
-  // setting logo dark mode
   const setDarkLogo = useSetRecoilState(darkLogoState);
 
   // when app loads, check if dark mode is in cookies
   useEffect(() => {
-    const darkMode = Cookies.get("darkMode");
-    console.log(darkMode);
+    const darkMode = Boolean(Cookies.get("darkMode"));
 
-    // if dark mode is set in cookies, we set the state to true
-    if (darkMode === "true") {
-      document.querySelector("html").classList.add("dark");
+    if (
+      (!darkMode &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches) ||
+      darkMode
+    ) {
+      document.documentElement.classList.add("dark");
       setDarkLogo(false);
+    } else {
+      document.documentElement.classList.remove("dark");
+      setDarkLogo(true);
     }
   }, []);
 

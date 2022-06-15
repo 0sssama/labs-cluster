@@ -82,7 +82,7 @@ After you finished coding and testing your feature, push to your branch. Then cr
 
 Here is a list of all the contributors to this project. Thanks to all of you!
 
-- [Oussama LABRAMI](https://github.com/0sssama)
+- [Oussama LABRAHMI](https://github.com/0sssama)
 - [Abdelhadi SABANI (awbx)](https://github.com/awbx)
 - [Nabil ATTIA](https://github.com/attia-nabil)
 - [Rida EL-MAZARY](https://github.com/rida-el)
