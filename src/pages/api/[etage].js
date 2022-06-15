@@ -56,7 +56,7 @@ async function getPostsFromCache(etage)
 {
   const posts = global.ft_posts[etage];
   console.log(posts.last_fetch, now());
-  if (posts.last_fetch + 60 < now())
+  if (posts.last_fetch + 1 < now())
   {
 	console.log( "from api");
 	posts.posts = reset_posts(posts.posts);
