@@ -2,7 +2,7 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { searchState } from "atoms/states";
 import { useRecoilValue } from "recoil";
 
-function Post({ x, y, vOffset, hOffset, host, user }) {
+function Post({ x, y, vOffset, hOffset, host, user, className }) {
   // default styles
   const styles = {
     gridArea: `${y} / ${x}`,
@@ -41,6 +41,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
             : "opacity-30"
           : ""
       }
+      ${className}
       `}
       style={host === "ENTRANCE" ? entranceStyles : styles}
       onClick={() => {
