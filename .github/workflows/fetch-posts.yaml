@@ -1,0 +1,12 @@
+name: fetch-posts
+on:
+  schedule:
+    - cron: '*/5 * * * * *'
+jobs:
+  cron:
+    runs-on: ubuntu-latest
+    steps:
+      - name: call fetchposts endpoint
+        run: |
+          curl --request GET \
+          --url 'https://labs-cluster-2.vercel.app/api/fetchposts'
