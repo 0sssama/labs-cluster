@@ -1,6 +1,7 @@
 import { Wrapper, Navigation, Post } from "components";
 import posts from "data/e2.json";
 import Head from "next/head";
+import { getHost } from "utils/getHost"
 
 function EtageDeux({ activePosts }) {
   return (
@@ -27,9 +28,9 @@ function EtageDeux({ activePosts }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   // get all active posts
-  const postsRequest = await fetch(process.env.NEXT_PUBLIC_URL + "/api/e2");
+  const postsRequest = await fetch(getHost(context.req) + "/api/e2");
 
   const activePosts = await postsRequest.json();
 

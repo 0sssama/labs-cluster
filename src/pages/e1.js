@@ -1,6 +1,7 @@
 import { Navigation, Wrapper, Post } from "components";
 import posts from "data/e1.json";
 import Head from "next/head";
+import { getHost } from "utils/getHost"
 
 function EtageUn({ activePosts }) {
   return (
@@ -27,9 +28,9 @@ function EtageUn({ activePosts }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
   // get all active posts
-  const postsRequest = await fetch(process.env.NEXT_PUBLIC_URL + "/api/e1");
+  const postsRequest = await fetch(getHost(context.req) + "/api/e1");
 
   const activePosts = await postsRequest.json();
 
