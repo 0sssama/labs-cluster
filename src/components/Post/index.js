@@ -2,6 +2,16 @@ import { AiOutlineArrowUp } from "react-icons/ai";
 import { searchState } from "atoms/states";
 import { useRecoilValue } from "recoil";
 
+function getRegex(search)
+{
+    try {
+        return new RegExp(search, "i")
+    } catch (error) {
+        console.log("invalid search regex")
+    }
+    return null
+}
+
 function Post({ x, y, vOffset, hOffset, host, user }) {
   // default styles
   const styles = {
@@ -21,7 +31,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
   const search = useRecoilValue(searchState);
 
   // query regex
-  const regex = new RegExp(search, "i");
+  const regex = getRegex(search)
 
   return (
     <div
@@ -33,7 +43,7 @@ function Post({ x, y, vOffset, hOffset, host, user }) {
           : ""
       }
       ${
-        search.length > 0
+        regex && search.length > 0
           ? regex.test(host) ||
             regex.test(user?.displayname) ||
             regex.test(user?.login)
