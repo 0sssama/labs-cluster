@@ -39,7 +39,7 @@ function Wrapper({ children }) {
         >
           Chaimaa Bourajli
         </a>{" "}
-        and
+        and{" "}
         <a href="https://github.com/mzarhou" target="_blank" rel="noreferrer">
           Mohamed Zarhou
         </a>
