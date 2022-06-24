@@ -89,6 +89,7 @@ Here is a list of all the contributors to this project. Thanks to all of you!
 - [Ismail Ait Bella](https://github.com/abellaismail7)
 - [Chaimaa Bourajli](https://github.com/chaibourajli)
 - [Xopper](https://github.com/Xopper)
+- [Mohamed Zarhou](https://github.com/mzarhou)
 
 ## Technologies used
 
